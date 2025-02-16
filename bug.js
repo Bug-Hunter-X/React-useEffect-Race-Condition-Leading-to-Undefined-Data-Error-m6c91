@@ -1,0 +1,1 @@
+This React code suffers from a race condition.  The `useEffect` hook fetches data, and the component attempts to render before the data is available, causing `data` to be `undefined`. This results in a runtime error because of the attempted access of `.map()` on undefined.
